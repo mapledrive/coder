@@ -1,35 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='mobile-container'>
+      <div className='topnav'>
+        <div className='holder'>
+          <a className='horizontal'>О мероприятии</a>
+          <a className='horizontal'>Регистрация</a>
+          <a className='horizontal'>Стоимость участия</a>
+          <a className='horizontal'>Спикеры</a>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <h2 className='heading-1'>Характеристики YS20</h2>
+      <div className='triod'>
+        Капитан и все матросы оценят мягкость удобных диванов. Регулируемые
+        диваны первого ряда легко настраиваются в комфортное положение.
+        Универсальности вашего судна способствует и то, что каждое заднее
+        сиденье складывается по отдельности, поэтому вы можете перевозить
+        пассажиров и груз одновременно без потери комфорта и безопасности.
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
